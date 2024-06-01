@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="modal.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="modal">
+        <form action="">
+            <button type="button" class="cerrar">x</button>
+            <div class="elemento">
+                <label for="nombre">Nombre</label>
+                <input name="nombre" type="text" placeholder="Ingrese su nombre">
+            </div>
+            <div class="elemento">
+                <label for="matricula">Matricula</label>
+                <input name="matricula" type="text" placeholder="Ingrese su matricula">
+            </div>
+            <div class="elemento">
+                <label for="semestre">Semestre</label>
+                <input name="semestre" type="text" placeholder="Ingrese su semestre">
+            </div>
+            <div class="elemento">
+                <label for="telefono">telefono</label>
+                <input name="telefono" type="text" placeholder="Ingrese su telefono">
+            </div>
+            <div class="elemento">
+                <label for="correo">Correo</label>
+                <input name="correo" type="text" placeholder="Ingrese su correo">
+            </div>
+            <div class="elemento">
+                <input name="" type="submit" value="Agregar">
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+    document.querySelector('.cerrar').addEventListener('click', function (e) {
+            document.querySelector('.modal').classList.remove('mostrar')
+      })
+    document.querySelector('.mostrar').addEventListener('click', function (e) {
+            document.querySelector('.modal').classList.add('mostrar')
+      })
+</script>
+</html>
